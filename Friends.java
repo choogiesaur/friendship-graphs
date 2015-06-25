@@ -8,12 +8,8 @@ import java.util.*;
 
 public class Friends {
 
-	/**
-	 * @param args
-	 * @throws IOException 
-	 */
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
+		
 		BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in)) ;
 		boolean success = false;
 		Graph g = new Graph();
@@ -38,12 +34,11 @@ public class Friends {
 			choice = -1;
 			System.out.println("Options");
 			System.out.println("-------");
-			System.out.println("1. Students in a school ");
+			System.out.println("1. Students in a school \n");
 			System.out.println("2. Shortest introduction chain");
 			System.out.println("3. Cliques at a school");
 			System.out.println("4. Connectors");
-			System.out.println("5. Quit");
-			System.out.println();
+			System.out.println("5. Quit\n");
 			try{
 				System.out.print("Enter your choice... ");
 				choice = Integer.parseInt(keyboard.readLine());
