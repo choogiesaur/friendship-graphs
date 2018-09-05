@@ -9,10 +9,10 @@ class Person {
 	String student;
 	String schoolName;
 
-	public Person(String namee, String stu, String sN) { // modified S
-		name = namee;
-		student = stu;
-		schoolName = sN;
+	public Person(String name, String student, String schoolName) { // modified S
+		this.name = name;
+		this.student = student;
+		this.schoolName = schoolName;
 	}
 
 	public String toString() {
