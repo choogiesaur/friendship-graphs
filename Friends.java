@@ -19,8 +19,7 @@ public class Friends {
 				System.out.print("Enter name of input file (____.txt): ");
 				String fileName = keyboard.readLine();
 				g.buildGraph(fileName);
-				System.out.println("Built graph from " + fileName + "!");
-				System.out.println();
+				System.out.println("Built graph from " + fileName + "!\n");
 				break;
 			}catch(FileNotFoundException f){
 				System.out.println("File not found ;(");
@@ -47,8 +46,7 @@ public class Friends {
 					throw e;
 				}
 			}catch(NumberFormatException e){
-				System.out.println("Must be a numbah between 1 and 5!");
-				System.out.println();
+				System.out.println("Must be a numbah between 1 and 5!\n");
 			}if(choice == 1){//students in a school
 				String school = null;
 				while(true){
