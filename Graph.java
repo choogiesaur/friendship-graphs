@@ -120,8 +120,8 @@ public class Graph {
 				}
 			}
 			if (flag == false) {
-				Node tempp = school.get(sName);
-				school.put(sName, new Node(person, tempp));
+				Node tempNode = school.get(sName);
+				school.put(sName, new Node(person, tempNode));
 			}
 		}
 
