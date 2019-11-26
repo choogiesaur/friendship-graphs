@@ -88,10 +88,9 @@ public class Graph {
 			String word = sc.nextLine();
 			word = word.toLowerCase(); // CASE INSENSITIVE
 
-			String[] temp = word.split("\\|", 3); // modified from john's
-			Node neigh0 = neighbor.get(temp[0]); // switcheroo
-			Node neigh1 = neighbor.get(temp[1]); // we are now friends of
-													// eachother
+			String[] temp = word.split("\\|", 3); 	// modified from john's
+			Node neigh0 = neighbor.get(temp[0]); 	// switcheroo
+			Node neigh1 = neighbor.get(temp[1]); 	// we are now friends of eachother
 
 			neighbor.put(temp[0], new Node(temp[1], neigh0));
 			neighbor.put(temp[1], new Node(temp[0], neigh1));
