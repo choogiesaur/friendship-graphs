@@ -97,8 +97,8 @@ public class Graph {
 
 			if (identity.get(temp[0]).student.equals("y") && identity.get(temp[1]).student.equals("y")) { // if both student & same school add whole string to school hashmap
 				if (identity.get(temp[0]).schoolName.equals(identity.get(temp[1]).schoolName)) {
-					Node tempp = school.get(identity.get(temp[0]).schoolName);
-					school.put(identity.get(temp[0]).schoolName, new Node(word,tempp));
+					Node tempNode = school.get(identity.get(temp[0]).schoolName);
+					school.put(identity.get(temp[0]).schoolName, new Node(word,tempNode));
 				}
 			}
 
